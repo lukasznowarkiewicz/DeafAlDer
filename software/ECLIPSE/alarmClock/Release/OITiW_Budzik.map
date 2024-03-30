@@ -1,0 +1,514 @@
+Archive member included because of file (symbol)
+
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodqi4.o)
+                              ./DISPLAY/display.o (__udivmodqi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodhi4.o)
+                              ./I2C_TWI/i2c_twi.o (__udivmodhi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o (exit)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+                              ./DISPLAY/display.o (__do_copy_data)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                              ./MK_ENCODER/mk_encoder.o (__do_clear_bss)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eerd_byte_atmega8.o)
+                              ./main.o (__eerd_byte_m8)
+c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eewr_byte_atmega8.o)
+                              ./main.o (__eewr_byte_m8)
+
+Allocating common symbols
+Common symbol       size              file
+
+cy4                 0x1               ./DISPLAY/display.o
+drz_mm              0x1               ./main.o
+Timer3              0x2               ./DISPLAY/display.o
+godziny             0x1               ./main.o
+enc_cnt             0x1               ./MK_ENCODER/mk_encoder.o
+sekundy             0x1               ./main.o
+Timer4              0x2               ./DISPLAY/display.o
+point               0x1               ./DISPLAY/display.o
+enc_flag            0x1               ./MK_ENCODER/mk_encoder.o
+led                 0x3               ./main.o
+drz_hh              0x1               ./main.o
+point_a             0x1               ./DISPLAY/display.o
+cy1                 0x1               ./DISPLAY/display.o
+Timer6              0x2               ./DISPLAY/display.o
+sw_callback         0x2               ./MK_ENCODER/mk_encoder.o
+bufor               0x4               ./main.o
+ed                  0x1               ./MK_ENCODER/mk_encoder.o
+Timer2              0x2               ./DISPLAY/display.o
+Timer8              0x2               ./DISPLAY/display.o
+cy2                 0x1               ./DISPLAY/display.o
+enc_callback        0x2               ./MK_ENCODER/mk_encoder.o
+Timer5              0x2               ./DISPLAY/display.o
+Timer1              0x2               ./DISPLAY/display.o
+cy3                 0x1               ./DISPLAY/display.o
+minuty              0x1               ./main.o
+Timer7              0x2               ./DISPLAY/display.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+LOAD ./WS2812/light_ws2812.o
+LOAD ./MK_ENCODER/mk_encoder.o
+LOAD ./I2C_TWI/i2c_twi.o
+LOAD ./DISPLAY/display.o
+LOAD ./main.o
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x139c
+ *(.vectors)
+ .vectors       0x00000000       0x26 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000026       0x10 ./MK_ENCODER/mk_encoder.o
+                0x00000026                table
+                0x00000036                . = ALIGN (0x2)
+                0x00000036                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000036        0x0 linker stubs
+ *(.trampolines*)
+                0x00000036                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000036                __ctors_start = .
+ *(.ctors)
+                0x00000036                __ctors_end = .
+                0x00000036                __dtors_start = .
+ *(.dtors)
+                0x00000036                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000036        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x00000036                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000036        0xc c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000042       0x16 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+                0x00000042                __do_copy_data
+ .init4         0x00000058       0x10 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                0x00000058                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000068        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ *(.init9)
+ *(.text)
+ .text          0x0000006c        0x2 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x0000006c                __vector_1
+                0x0000006c                __vector_12
+                0x0000006c                __bad_interrupt
+                0x0000006c                __vector_6
+                0x0000006c                __vector_11
+                0x0000006c                __vector_13
+                0x0000006c                __vector_17
+                0x0000006c                __vector_7
+                0x0000006c                __vector_5
+                0x0000006c                __vector_4
+                0x0000006c                __vector_15
+                0x0000006c                __vector_8
+                0x0000006c                __vector_14
+                0x0000006c                __vector_10
+                0x0000006c                __vector_16
+                0x0000006c                __vector_18
+ .text          0x0000006e       0x98 ./WS2812/light_ws2812.o
+                0x000000e8                ws2812_setleds_pin
+                0x00000100                ws2812_setleds
+                0x0000006e                ws2812_sendarray_mask
+                0x000000d2                ws2812_setleds_rgbw
+                0x000000cc                ws2812_sendarray
+ .text          0x00000106      0x150 ./MK_ENCODER/mk_encoder.o
+                0x00000106                register_enc_callback
+                0x00000152                ENCODER_EVENT
+                0x000001d6                __vector_3
+                0x00000110                register_sw_callback
+                0x0000011a                encoder_init
+ .text          0x00000256      0x118 ./I2C_TWI/i2c_twi.o
+                0x0000028a                TWI_write
+                0x00000272                TWI_start
+                0x00000298                TWI_read
+                0x000002fa                TWI_read_buf
+                0x0000027e                TWI_stop
+                0x000002ae                TWI_write_buf
+                0x00000256                i2cSetBitrate
+ .text          0x0000036e      0x21e ./DISPLAY/display.o
+                0x0000036e                d_init
+                0x000003d2                conv
+                0x0000038a                d_time
+                0x000003e8                __vector_9
+ .text          0x0000058c      0xda2 ./main.o
+                0x00000600                ws_rst
+                0x00000b60                enc_switch
+                0x000007e0                ws_put
+                0x00000ff4                read_t
+                0x00000916                ws_mod
+                0x00000662                my_encoder
+                0x00000f9a                d_ntime
+                0x000007f8                signal
+                0x0000058c                al_check
+                0x00001066                main
+                0x00000630                dec2bcd
+                0x00000d1e                czujka
+                0x00000612                __vector_2
+                0x00000ab4                alarm_set
+                0x0000064e                bcd2dec
+                0x00000778                read_alarm
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodqi4.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodhi4.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eerd_byte_atmega8.o)
+ .text          0x0000132e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eewr_byte_atmega8.o)
+                0x0000132e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000132e       0x18 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodqi4.o)
+                0x0000132e                __udivmodqi4
+ .text.libgcc   0x00001346       0x28 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodhi4.o)
+                0x00001346                __udivmodhi4
+ .text.libgcc   0x0000136e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x0000136e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000136e        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x0000136e       0x10 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eerd_byte_atmega8.o)
+                0x0000136e                __eerd_byte_m8
+ .text.avr-libc
+                0x0000137e       0x1a c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eewr_byte_atmega8.o)
+                0x0000137e                __eewr_byte_m8
+                0x00001380                __eewr_r18_m8
+                0x00001398                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001398        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+                0x00001398                exit
+                0x00001398                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001398        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000139c                _etext = .
+
+.data           0x00800060        0x8 load address 0x0000139c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ .data          0x00800060        0x0 ./WS2812/light_ws2812.o
+ .data          0x00800060        0x0 ./MK_ENCODER/mk_encoder.o
+ .data          0x00800060        0x0 ./I2C_TWI/i2c_twi.o
+ .data          0x00800060        0x1 ./DISPLAY/display.o
+ .data          0x00800061        0x6 ./main.o
+                0x00800066                b
+                0x00800061                wynik
+                0x00800065                g
+                0x00800064                dir_r
+                0x00800063                r
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodqi4.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodhi4.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eerd_byte_atmega8.o)
+ .data          0x00800067        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eewr_byte_atmega8.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800068                . = ALIGN (0x2)
+ *fill*         0x00800067        0x1 00
+                0x00800068                _edata = .
+                0x00800068                PROVIDE (__data_end, .)
+
+.bss            0x00800068       0x42
+                0x00800068                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800068        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ .bss           0x00800068        0x0 ./WS2812/light_ws2812.o
+ .bss           0x00800068        0x3 ./MK_ENCODER/mk_encoder.o
+ .bss           0x0080006b        0x0 ./I2C_TWI/i2c_twi.o
+ .bss           0x0080006b        0x2 ./DISPLAY/display.o
+                0x0080006b                n1
+ .bss           0x0080006d       0x14 ./main.o
+                0x0080007c                dir_b
+                0x00800080                bp
+                0x0080006e                menu
+                0x0080007f                gp
+                0x00800074                lock
+                0x00800070                al_mm
+                0x0080007a                z
+                0x0080006d                clk_flag
+                0x00800078                mod
+                0x00800077                prawo
+                0x00800071                alarm_on
+                0x00800075                drzemka
+                0x0080007e                rp
+                0x0080007d                sw
+                0x0080007b                dir_g
+                0x00800076                lewo
+                0x00800072                alarm_is
+                0x00800073                sig_cnt
+                0x0080006f                al_hh
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodqi4.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eerd_byte_atmega8.o)
+ .bss           0x00800081        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a(eewr_byte_atmega8.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800081        0x7 ./MK_ENCODER/mk_encoder.o
+                0x00800081                enc_cnt
+                0x00800082                enc_flag
+                0x00800083                sw_callback
+                0x00800085                ed
+                0x00800086                enc_callback
+ COMMON         0x00800088       0x16 ./DISPLAY/display.o
+                0x00800088                cy4
+                0x00800089                Timer3
+                0x0080008b                Timer4
+                0x0080008d                point
+                0x0080008e                point_a
+                0x0080008f                cy1
+                0x00800090                Timer6
+                0x00800092                Timer2
+                0x00800094                Timer8
+                0x00800096                cy2
+                0x00800097                Timer5
+                0x00800099                Timer1
+                0x0080009b                cy3
+                0x0080009c                Timer7
+ COMMON         0x0080009e        0xc ./main.o
+                0x0080009e                drz_mm
+                0x0080009f                godziny
+                0x008000a0                sekundy
+                0x008000a1                led
+                0x008000a4                drz_hh
+                0x008000a5                bufor
+                0x008000a9                minuty
+                0x008000aa                PROVIDE (__bss_end, .)
+                0x0000139c                __data_load_start = LOADADDR (.data)
+                0x000013a4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000aa        0x0
+                0x008000aa                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000aa                PROVIDE (__noinit_end, .)
+                0x008000aa                _end = .
+                0x008000aa                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x4
+ *(.eeprom*)
+ .eeprom        0x00810000        0x4 ./main.o
+                0x00810000                eeprom
+                0x00810004                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(OITiW_Budzik.elf elf32-avr)
+LOAD linker stubs
