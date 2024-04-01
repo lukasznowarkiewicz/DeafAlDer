@@ -103,6 +103,34 @@ For the ATmega microcontroller modules, including the alarm clock and kitchen ti
 
 The development journey of the DeafAIDer® system involved iterative programming, thorough testing, and subsequent enhancements to ensure reliability and efficiency. Initial coding in Siemens Soft Comfort and Eclipse IDE for PLC and ATmega microcontroller modules laid the foundation. Debugging was integral, with a notable instance being a minor yet crucial bug fix in the alarm clock's code, illustrating the importance of exhaustive testing. Enhancements focused on optimizing user interaction and expanding functionalities, like improving gesture sensor performance under varying light conditions. Future directions include broadening the system's module range, integrating with commercial automation networks for increased versatility, and enhancing user interface components for more intuitive control. Implementing a unified communication protocol across modules could streamline system scalability and maintenance, marking a significant step towards a more sophisticated and user-friendly system.
 
+## System demo
+
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/30dcdb68-dc5e-40ae-9b09-1e6bd0c45c55
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/d59c7de7-a46c-4660-a88d-75366e488374
+
+
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/22743499-b59c-4883-a13b-ed7b0123d851
+
+
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/b2934141-e224-4ac1-818c-679850b4b7ee
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/fbbebed0-94ce-44d5-bf3a-540288e1ebc2
+
+
+
+
+https://github.com/lukasznowarkiewicz/DeafAlDer/assets/82212257/afbe17d6-55ad-4702-905c-0f04d01cdc59
+
+
 
 
 ## Conclusions and Future Work
