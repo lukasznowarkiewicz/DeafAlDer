@@ -1,9 +1,12 @@
 # DeafAlDer
 
+![Project Photos](imagesAndPhotos/project_photos.JPG)
+
 ## Introduction
 
 DeafAIDer system is a home signaling and alarm system designed specifically for people who are deaf. The idea was born as a project for the XLV Innovation and Invention Olympics at the Electrical and Electronic Schools in Szczecin, Poland, under the guidance of Dr. Dariusz Mostowski. Our goal was to create an affordable and scalable solution to alert deaf individuals to everyday events and emergencies through predefined light signals, vibrations, and low-frequency sound waves. It's user-friendly, integrates easily with existing home systems, and can work with both custom and commercial sensors.
 
+![DeafAlDer Logo](imagesAndPhotos/Defaider_Logo_new.png)
 
 
 ## Functional assumptions
@@ -17,32 +20,75 @@ The DeafAIDer system is designed to be modular and scalable, seamlessly integrat
 
 The DeafAIDer system's heart, a Siemens PLC controller LOGO! 12/24 RCE, orchestrates event detection and signaling, integrating seamlessly with both custom and commercial modules via digital inputs and controlling outputs for various alert types, all while offering extensive programmability and remote management features.
 
+![PLC Wired Up](imagesAndPhotos/PLC_wired_up.JPG)
+![PLC Programming](imagesAndPhotos/PLC_programming.JPG)
+![PLC Connections Diagram](imagesAndPhotos/PLC_connections_diagram.png)
+
 ### Flood Sensor Module
 
 The flood sensor module in the DeafAIDer® system detects water leaks or pipe bursts by utilizing the electrical conductivity of water to change the state of a MOSFET transistor, triggering an alert and activating programmed responses such as strobe lighting and display notifications.
 
+- Altium Designs for Flood Sensor:
+    - ![Flood Sensor Schematic](imagesAndPhotos/altium/floodSensor_sch.JPG)
+    - ![Flood Sensor PCB](imagesAndPhotos/altium/floodSensor_pcb.JPG)
+    - ![Flood Sensor Top View](imagesAndPhotos/altium/floodSensor_top.JPG)
 
 ### Kitchen Timer Module
 
 The kitchen timer module, designed for simplicity and functionality, uses a single encoder with a button for setting and adjusting countdown times for cooking tasks. Upon time expiration, it triggers an alarm and a visual signal on the display, also notifying the DeafAIDer system to activate kitchen lights for an intuitive and accessible alert.
 
+- Altium Designs for Kitchen Timer:
+    - ![Timer Schematic](imagesAndPhotos/altium/timer_sch.JPG)
+    - ![Timer PCB](imagesAndPhotos/altium/timer_pcb.JPG)
+    - ![Timer Top View](imagesAndPhotos/altium/timer_top.JPG)
+
+
 ### Smoke and carbon monoxide
 
 To seamlessly incorporate commercial smoke and carbon monoxide detectors into the DeafAIDer system, custom boards were developed. These boards adapt the sensors to the system's 12V power supply and convert alarm signals into digital outputs compatible with the central control unit. This ensures that the system can directly power the sensors and correctly interpret their alerts, enabling effective visual warnings for users.
 
+- Altium Designs for Smoke and CO Detector:
+    - ![Smoke Detector PCB](imagesAndPhotos/altium/smokeDetector_pcb.JPG)
+    - ![Smoke Detector Schematic](imagesAndPhotos/altium/smokeDetector_sch.JPG)
+    - ![Smoke Detector Bottom](imagesAndPhotos/altium/smokeDetector_bottom.JPG)
+    - ![Smoke Detector Top](imagesAndPhotos/altium/smokeDetector_top.JPG)
 
 ### Alarm Clock Module with Vibration Signal
 
 Built on an ATmega8 microcontroller, this module offers multiple input methods including an encoder, proximity sensors, and a capacitive button, with feedback displayed on a quadruple 7-segment display, enhanced by an RGB LED for color-coded alerts. It uniquely controls a vibration pad for waking up, integrating several functional blocks like power supply adaptation, signal processing, and RTC module for timekeeping. Customization ensures direct connection to the central unit via logic level conversion, making it a vital component for the visually and auditorily accessible DeafAIDer system.
 
+- Altium Designs for Alarm Clock:
+    - ![Alarm Clock PCB](imagesAndPhotos/altium/alarmClock_pcb.JPG)
+    - ![Alarm Clock Schematic](imagesAndPhotos/altium/alarmClock_sch.JPG)
+    - ![Alarm Clock Bottom View](imagesAndPhotos/altium/alarmClock_bottom.JPG)
+    - ![Alarm Clock Top View](imagesAndPhotos/altium/alarmClock_top.JPG)
+    - ![Alarm Clock Screen PCB](imagesAndPhotos/altium/alarmClockScreen_pcb.JPG)
+    - ![Alarm Clock Screen Schematic](imagesAndPhotos/altium/alarmClockScreen_sch.JPG)
+    - ![Alarm Clock Screen Bottom](imagesAndPhotos/altium/alarmClockScreen_bottom.JPG)
+    - ![Alarm Clock Screen Top](imagesAndPhotos/altium/alarmClockScreen_top.JPG)
+    - ![Alarm Clock Vibrating Pillow PCB](imagesAndPhotos/altium/alarmClockVibratingPillow_pcb.JPG)
+    - ![Alarm Clock Vibrating Pillow Schematic](imagesAndPhotos/altium/alarmClockVibratingPillow_sch.JPG)
+    - ![Alarm Clock Vibrating Pillow Bottom](imagesAndPhotos/altium/alarmClockVibratingPillow_bottom.JPG)
+    - ![Alarm Clock Vibrating Pillow Top](imagesAndPhotos/altium/alarmClockVibratingPillow_top.JPG)
+
+
 ### Doorbell Module
 
 The doorbell module features an encapsulated momentary button with LED indicators, interfacing with an acoustic signaler within the distribution board. It comprises a power supply block for system integration, a button control with debouncing circuitry, and an LED lighting section that alternates between blue for standby and red when activated, ensuring efficient power use and clear visual feedback.
+
+- Altium Designs for Doorbell:
+    - ![Doorbell PCB](imagesAndPhotos/altium/doorbell_pcb.JPG)
+    - ![Doorbell Schematic](imagesAndPhotos/altium/doorbell_sch.JPG)
+    - ![Doorbell Bottom View](imagesAndPhotos/altium/doorbell_bottom.JPG)
+    - ![Doorbell Top View](imagesAndPhotos/altium/doorbell_top.JPG)
 
 ## Hardware - mechanical
 
 All these custom-designed enclosures, detailed in Autodesk Inventor 2014 and realized through 3D printing, were efficiently accommodated within a presentation case. This meticulous organization not only ensured the portability of the DeafAIDer® system's components like the alarm clock module, kitchen timer, and various sensors but also highlighted the system's modular design and the practical application of 3D printing in creating tailored electronics enclosures for a cohesive and professional demonstration setup.
 
+![Inventor](imagesAndPhotos/inventor.png)
+
+![3D Printing](imagesAndPhotos/3d_printing.JPG)
 
 ## Software
 
