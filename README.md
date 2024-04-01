@@ -39,6 +39,21 @@ Built on an ATmega8 microcontroller, this module offers multiple input methods i
 
 The doorbell module features an encapsulated momentary button with LED indicators, interfacing with an acoustic signaler within the distribution board. It comprises a power supply block for system integration, a button control with debouncing circuitry, and an LED lighting section that alternates between blue for standby and red when activated, ensuring efficient power use and clear visual feedback.
 
+## Hardware - mechanical
+
+All these custom-designed enclosures, detailed in Autodesk Inventor 2014 and realized through 3D printing, were efficiently accommodated within a presentation case. This meticulous organization not only ensured the portability of the DeafAIDer® system's components like the alarm clock module, kitchen timer, and various sensors but also highlighted the system's modular design and the practical application of 3D printing in creating tailored electronics enclosures for a cohesive and professional demonstration setup.
+
+
+## Software
+
+The DeafAIDer system's software is developed across two main platforms. 
+
+The PLC components are programmed using Logo Soft Comfort, a user-friendly software tailored for configuring Siemens LOGO! PLCs, enabling intuitive logic creation for the system's core functionalities. 
+
+For the ATmega microcontroller modules, including the alarm clock and kitchen timer, the Eclipse IDE is utilized alongside the C programming language, offering a robust environment for developing and debugging the microcontroller's firmware.
+
+
+
 
 
 
